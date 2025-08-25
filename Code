@@ -1,0 +1,16 @@
+CREATE TABLE BOOKS(
+    BookId  INT PRIMARY KEY,
+    Title VARCHAR2(100),
+    Author VARCHAR2(50),
+    Publisher VARCHAR2(100),
+    Published_Year NUMBER
+);
+INSERT INTO Books (BookId, Title, Author, Publisher, Published_Year)
+VALUES
+(1, 'Dickens', 'David Copperfield','Penguin_Classics', 1960),
+(2, 'Austen', 'Emma', 'Modern_library', 1949),
+(3, 'Shakespeare', 'Hamlet', 'Dover', 1925),
+(4, 'Hemingway', 'Sun_Also_Rises', 'Scribner', 1997),
+(5, 'The Hobbit', 'J.R.R. Tolkien', 'George Allen & Unwin', 1937);
+
+SELECT * FROM BOOKS;
